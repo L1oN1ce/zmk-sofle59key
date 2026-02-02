@@ -93,9 +93,9 @@
             display-name = "extra";
             bindings = <
 &kp F1           &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
-&none            &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &none      &kp TAB
-&none            &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp AMPERSAND     &kp AT_SIGN        &kp HASH        &kp CARET             &kp SEMI   &kp GRAVE
-&kp C_AL_LOGOFF  &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &none             &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp UNDER  &kp SLASH
+&none            &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp TAB
+&none            &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp AMPERSAND     &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp SEMI   &kp GRAVE
+&kp C_AL_LOGOFF  &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp DOLLAR        &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp UNDER  &kp SLASH
                          &kp RIGHT_ALT   &kp LEFT_ALT      &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp DEL           &kp RIGHT          &kp LEFT_ALT    &kp RIGHT_ALT
             >;
 
