@@ -54,6 +54,17 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
             flavor = "tap-preferred";
         };
+
+        hold_control: hold_control {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_CONTROL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -72,11 +83,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                       &kp NUMBER_6                                           &kp N7                           &kp N8                         &kp N9        &kp N0         &kp MINUS  &kp EQUAL
-&kp TAB       &kp Q         &kp W          &kp E         &kp R                        &kp T                                                  &kp Y                            &kp U                          &kp I         &kp O          &kp P      &kp TAB
-&kp LA(TAB)   &kp A         &kp S          &kp D         &kp F                        &kp G                                                  &kp H                            &kp J                          &kp K         &kp L          &kp SEMI   &kp SINGLE_QUOTE
-&kp LEFT_WIN  &kp Z         &kp X          &kp C         &kp V                        &kp B                       &kp K_MUTE      &kp DEL    &kp N                            &kp M                          &kp COMMA     &kp DOT        &kp UNDER  &kp SLASH
-                            &kp RIGHT_ALT  &kp LEFT_ALT  &HRK_left LEFT_CONTROL LEFT  &HRK_left LEFT_SHIFT SPACE  &lt 1 ESCAPE    &lt 1 RET  &HRK_right LEFT_SHIFT BACKSPACE  &HRK_right LEFT_CONTROL RIGHT  &kp LEFT_ALT  &kp RIGHT_ALT
+&kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3           &kp NUMBER_4           &kp N5                       &kp NUMBER_6                                           &kp N7                           &kp N8                         &kp N9        &kp N0         &kp MINUS  &kp EQUAL
+&kp TAB       &kp Q                  &kp W                  &kp E                  &kp R                        &hold_control LC(T) T                                  &kp Y                            &kp U                          &kp I         &kp O          &kp P      &kp TAB
+&kp LA(TAB)   &hold_control LC(A) A  &kp S                  &kp D                  &kp F                        &kp G                                                  &kp H                            &kp J                          &kp K         &kp L          &kp SEMI   &kp SINGLE_QUOTE
+&kp LEFT_WIN  &kp Z                  &hold_control LC(X) X  &hold_control LC(C) C  &hold_control LC(V) V        &kp B                       &kp K_MUTE      &kp DEL    &kp N                            &kp M                          &kp COMMA     &kp DOT        &kp UNDER  &kp SLASH
+                                     &kp RIGHT_ALT          &kp LEFT_ALT           &HRK_left LEFT_CONTROL LEFT  &HRK_left LEFT_SHIFT SPACE  &lt 1 ESCAPE    &lt 1 RET  &HRK_right LEFT_SHIFT BACKSPACE  &HRK_right LEFT_CONTROL RIGHT  &kp LEFT_ALT  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
