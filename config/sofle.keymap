@@ -111,11 +111,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&hold_control F1 NUMBER_1  &hold_control F2 NUMBER_2  &hold_control F3 NUMBER_3      &hold_control F4 NUMBER_4          &hold_control F5 N5           &hold_control F6 NUMBER_6                           &hold_control F7 N7  &hold_control F8 N8             &hold_control F9 N9                 &hold_control F10 N0            &hold_control F11 MINUS  &hold_control F12 EQUAL
-&kp TAB                    &kp Q                      &kp W                          &kp E                              &kp R                         &kp T                                               &kp Y                &kp U                           &kp I                               &kp O                           &kp P                    &kp DEL
-&kp LA(SPACE)              &kp A                      &HRK_left_ctrl_alt LEFT_ALT S  &HRK_left_ctrl_alt LEFT_CONTROL D  &hrk_left_shift LEFT_SHIFT F  &kp G                                               &kp H                &hrk_right_shift RIGHT_SHIFT J  &HRK_right_ctrl_alt LEFT_CONTROL K  &HRK_right_ctrl_alt LEFT_ALT L  &kp SEMI                 &kp SINGLE_QUOTE
-&kp LEFT_WIN               &kp Z                      &kp X                          &kp C                              &kp V                         &kp B                      &kp K_MUTE    &kp DEL    &kp N                &kp M                           &kp COMMA                           &kp DOT                         &kp UNDER                &kp SLASH
-                                                      &kp RIGHT_ALT                  &none                              &lt 1 LEFT_ARROW              &kp SPACE                  &kp ESC       &kp ENTER  &kp BACKSPACE        &lt 1 RIGHT                     &none                               &kp RIGHT_ALT
+&hold_control F1 NUMBER_1  &hold_control F2 NUMBER_2  &hold_control F3 NUMBER_3      &hold_control F4 NUMBER_4          &hold_control F5 N5           &hold_control F6 NUMBER_6                              &hold_control F7 N7  &hold_control F8 N8             &hold_control F9 N9                 &hold_control F10 N0            &hold_control F11 MINUS  &hold_control F12 EQUAL
+&kp TAB                    &kp Q                      &kp W                          &kp E                              &kp R                         &kp T                                                  &kp Y                &kp U                           &kp I                               &kp O                           &kp P                    &kp DEL
+&kp LA(SPACE)              &kp A                      &HRK_left_ctrl_alt LEFT_ALT S  &HRK_left_ctrl_alt LEFT_CONTROL D  &hrk_left_shift LEFT_SHIFT F  &kp G                                                  &kp H                &hrk_right_shift RIGHT_SHIFT J  &HRK_right_ctrl_alt LEFT_CONTROL K  &HRK_right_ctrl_alt LEFT_ALT L  &kp SEMI                 &kp SINGLE_QUOTE
+&kp LEFT_WIN               &kp Z                      &kp X                          &kp C                              &kp V                         &kp B                      &kp K_MUTE    &kp CAPSLOCK  &kp N                &kp M                           &kp COMMA                           &kp DOT                         &kp UNDER                &kp SLASH
+                                                      &kp RIGHT_ALT                  &none                              &lt 1 LEFT_ARROW              &kp SPACE                  &kp ESC       &kp ENTER     &kp BACKSPACE        &lt 1 RIGHT                     &none                               &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -132,7 +132,7 @@
             display-name = "extra";
             bindings = <
 &kp F1  &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
-&none   &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp TAB
+&none   &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp DEL
 &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp SEMI   &kp GRAVE
 &none   &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp UNDER  &kp LC(SLASH)
                 &kp RIGHT_ALT   &kp LEFT_ALT      &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp DEL           &kp RIGHT          &kp LEFT_ALT    &kp RIGHT_ALT
