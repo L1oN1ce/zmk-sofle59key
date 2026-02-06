@@ -34,7 +34,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            hold-while-undecided;
             retro-tap;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 58 59>;
             hold-trigger-on-release;
@@ -48,7 +47,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            hold-while-undecided;
             retro-tap;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54>;
@@ -83,11 +81,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&hold_control F1 NUMBER_1  &hold_control F2 NUMBER_2  &hold_control F3 NUMBER_3  &hold_control F4 NUMBER_4  &hold_control F5 N5          &hold_control F6 NUMBER_6                              &hold_control F7 N7              &hold_control F8 N8            &hold_control F9 N9  &hold_control F10 N0  &hold_control F11 MINUS  &hold_control F12 EQUAL
-&kp TAB                    &kp Q                      &kp W                      &kp E                      &kp R                        &hold_control LC(T) T                                  &kp Y                            &kp U                          &kp I                &kp O                 &kp P                    &kp TAB
-&kp LA(TAB)                &hold_control LC(A) A      &kp S                      &kp D                      &kp F                        &kp G                                                  &kp H                            &kp J                          &kp K                &kp L                 &kp SEMI                 &kp SINGLE_QUOTE
-&kp LEFT_WIN               &kp Z                      &hold_control LC(X) X      &hold_control LC(C) C      &hold_control LC(V) V        &kp B                       &kp K_MUTE      &kp DEL    &kp N                            &kp M                          &kp COMMA            &kp DOT               &kp UNDER                &kp SLASH
-                                                      &kp RIGHT_ALT              &kp LEFT_ALT               &HRK_left LEFT_CONTROL LEFT  &HRK_left LEFT_SHIFT SPACE  &lt 1 ESCAPE    &lt 1 RET  &HRK_right LEFT_SHIFT BACKSPACE  &HRK_right LEFT_CONTROL RIGHT  &kp LEFT_ALT         &kp RIGHT_ALT
+&hold_control F1 NUMBER_1  &hold_control F2 NUMBER_2  &hold_control F3 NUMBER_3  &hold_control F4 NUMBER_4  &hold_control F5 N5          &hold_control F6 NUMBER_6                              &hold_control F7 N7              &hold_control F8 N8            &hold_control F9 N9        &hold_control F10 N0   &hold_control F11 MINUS  &hold_control F12 EQUAL
+&kp TAB                    &kp Q                      &kp W                      &kp E                      &kp R                        &hold_control LC(T) T                                  &kp Y                            &kp U                          &kp I                      &kp O                  &kp P                    &kp TAB
+&kp LA(TAB)                &hold_control LC(A) A      &hold_control LC(S) S      &HRK_left LEFT_CONTROL D   &HRK_left LEFT_SHIFT F       &kp G                                                  &hold_control LC(H) H            &HRK_right RIGHT_SHIFT J       &HRK_right LEFT_CONTROL K  &hold_control LC(L) L  &kp SEMI                 &kp SINGLE_QUOTE
+&kp LEFT_WIN               &kp Z                      &hold_control LC(X) X      &hold_control LC(C) C      &hold_control LC(V) V        &kp B                       &kp K_MUTE      &kp DEL    &kp N                            &kp M                          &kp COMMA                  &kp DOT                &kp UNDER                &kp SLASH
+                                                      &kp RIGHT_ALT              &kp LEFT_ALT               &HRK_left LEFT_CONTROL LEFT  &HRK_left LEFT_SHIFT SPACE  &lt 1 ESCAPE    &lt 1 RET  &HRK_right LEFT_SHIFT BACKSPACE  &HRK_right LEFT_CONTROL RIGHT  &kp LEFT_ALT               &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -103,11 +101,11 @@
 
             display-name = "extra";
             bindings = <
-&kp F1           &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
-&none            &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp TAB
-&none            &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp AMPERSAND     &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp SEMI   &kp GRAVE
-&kp C_AL_LOGOFF  &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp DOLLAR        &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp UNDER  &kp SLASH
-                         &kp RIGHT_ALT   &kp LEFT_ALT      &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp DEL           &kp RIGHT          &kp LEFT_ALT    &kp RIGHT_ALT
+&kp F1  &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
+&none   &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp TAB
+&none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp SEMI   &kp GRAVE
+&none   &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp UNDER  &kp LC(SLASH)
+                &kp RIGHT_ALT   &kp LEFT_ALT      &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp DEL           &kp RIGHT          &kp LEFT_ALT    &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
