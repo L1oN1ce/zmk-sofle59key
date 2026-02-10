@@ -135,7 +135,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
 &none   &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp DEL
-&none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp SEMI   &kp GRAVE
+&none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp PLUS              &kp EQUAL  &kp DOLLAR
 &none   &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp SLASH          &kp PIPE        &kp NON_US_BACKSLASH  &kp MINUS  &kp LC(SLASH)
                 &kp RIGHT_ALT   &kp LEFT_ALT      &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp DEL           &kp RIGHT          &kp LEFT_ALT    &kp RIGHT_ALT
             >;
