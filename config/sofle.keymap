@@ -133,11 +133,11 @@
 
             display-name = "extra";
             bindings = <
-&kp F1  &kp F2  &kp F3          &kp F4            &kp F5           &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
-&none   &none   &kp PAGE_DOWN   &kp UP_ARROW      &kp PAGE_UP      &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp LA(TAB)
-&none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp PLUS              &kp EQUAL  &kp DOLLAR
-&none   &none   &kp C_REWIND    &kp C_PLAY_PAUSE  &kp C_FF         &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp QUESTION       &kp PIPE        &kp NON_US_BACKSLASH  &kp MINUS  &kp SLASH
-                &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT         &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE     &kp DEL            &kp RIGHT_ALT   &trans
+&kp F1        &kp F2  &kp F3           &kp F4            &kp F5             &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
+&none         &none   &kp K_SCROLL_UP  &kp UP_ARROW      &kp K_SCROLL_DOWN  &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp LA(TAB)
+&none         &none   &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW    &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp PLUS              &kp EQUAL  &kp DOLLAR
+&kp LEFT_WIN  &none   &kp C_REWIND     &kp C_PLAY_PAUSE  &kp C_FF           &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp QUESTION       &kp PIPE        &kp NON_US_BACKSLASH  &kp MINUS  &kp SLASH
+                      &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LEFT           &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE     &kp DEL            &kp RIGHT_ALT   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
