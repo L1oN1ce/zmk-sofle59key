@@ -133,11 +133,11 @@
 
             display-name = "extra";
             bindings = <
-&kp F1        &kp F2  &kp F3           &kp F4            &kp F5             &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
-&none         &none   &kp K_SCROLL_UP  &kp UP_ARROW      &kp K_SCROLL_DOWN  &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp LA(TAB)
-&none         &none   &kp LEFT_ARROW   &kp DOWN_ARROW    &kp RIGHT_ARROW    &none                               &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp PLUS              &kp EQUAL  &kp DOLLAR
-&kp LEFT_WIN  &none   &kp C_REWIND     &kp C_PLAY_PAUSE  &kp C_FF           &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp QUESTION       &kp PIPE        &kp NON_US_BACKSLASH  &kp MINUS  &kp SLASH
-                      &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp LEFT           &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE     &kp DEL            &kp RIGHT_ALT   &trans
+&kp F1        &kp F2  &kp F3                             &kp F4                                   &kp F5                                     &kp F6                              &kp F7            &kp F8             &kp F9          &kp F10               &kp F11    &kp F12
+&none         &none   &kp PAGE_UP                        &hold_control LG(UP_ARROW) UP_ARROW      &kp PAGE_DOWN                              &none                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp CARET  &kp LA(TAB)
+&none         &none   &hold_control LG(LEFT_ARROW) LEFT  &hold_control LG(DOWN_ARROW) DOWN_ARROW  &hold_control LG(RIGHT_ARROW) RIGHT_ARROW  &none                               &kp HASH          &kp QUESTION       &kp EXCL        &kp PLUS              &kp EQUAL  &kp DOLLAR
+&kp LEFT_WIN  &none   &kp C_REWIND                       &kp C_PLAY_PAUSE                         &kp C_FF                                   &none      &kp K_MUTE    &kp CLCK   &kp AMPERSAND     &kp AT_SIGN        &kp PIPE        &kp NON_US_BACKSLASH  &kp MINUS  &kp SLASH
+                      &kp LEFT_SHIFT                     &kp LEFT_CONTROL                         &trans                                     &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE     &kp DEL            &kp RIGHT_ALT   &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -145,11 +145,11 @@
 
         num {
             bindings = <
-&trans        &trans  &trans              &trans              &trans               &trans                              &trans         &trans        &trans        &trans          &trans  &trans
-&trans        &trans  &trans              &kp LG(UP_ARROW)    &trans               &trans                              &trans         &kp N7        &kp N8        &kp N9          &trans  &trans
-&trans        &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans                              &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6    &trans  &trans
-&kp LEFT_WIN  &trans  &trans              &trans              &trans               &trans     &trans        &trans     &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans
-                      &kp LEFT_SHIFT      &trans              &trans               &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE  &kp DEL       &trans        &kp LEFT_SHIFT
+&trans        &trans  &trans                  &kp LC(LG(F4))    &trans                   &trans                              &trans         &trans        &trans        &trans          &trans  &trans
+&trans        &trans  &trans                  &trans            &trans                   &trans                              &trans         &kp N7        &kp N8        &kp N9          &trans  &trans
+&trans        &trans  &kp LG(LC(LEFT_ARROW))  &kp LG(LC(D))     &kp LG(LC(RIGHT_ARROW))  &trans                              &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6    &trans  &trans
+&kp LEFT_WIN  &trans  &trans                  &trans            &trans                   &trans     &trans        &trans     &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans
+                      &kp LEFT_SHIFT          &kp LEFT_CONTROL  &trans                   &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE  &kp DEL       &trans        &kp LEFT_SHIFT
             >;
         };
     };
