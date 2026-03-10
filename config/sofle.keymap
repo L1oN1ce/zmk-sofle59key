@@ -149,7 +149,7 @@
 &trans        &trans  &trans                               &hold_control LG(TAB) LG(UP_ARROW)      &trans                                       &trans                              &trans         &kp N7        &kp N8        &kp N9          &trans  &trans
 &trans        &trans  &hold_control LC(LG(LEFT)) LG(LEFT)  &hold_control LG(LC(D)) LG(DOWN_ARROW)  &hold_control LG(LC(RIGHT_ARROW)) LG(RIGHT)  &trans                              &trans         &kp NUMBER_4  &kp N5        &kp NUMBER_6    &trans  &trans
 &kp LEFT_WIN  &trans  &trans                               &trans                                  &trans                                       &trans     &trans        &trans     &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans
-                      &kp LEFT_SHIFT                       &kp LEFT_CONTROL                        &to 2                                        &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE  &kp DEL       &trans        &kp LEFT_SHIFT
+                      &kp LEFT_SHIFT                       &kp LEFT_CONTROL                        &to 0                                        &kp SPACE  &kp ESCAPE    &kp ENTER  &kp BACKSPACE  &kp DEL       &trans        &kp LEFT_SHIFT
             >;
         };
     };
